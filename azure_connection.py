@@ -7,7 +7,7 @@ def get_azure_connection ():
     account_name = "thesislakehouse"
     container_name = "rawdata"
     #Azure connection string
-    connection_string = "BlobEndpoint=https://thesislakehouse.blob.core.windows.net/;QueueEndpoint=https://thesislakehouse.queue.core.windows.net/;FileEndpoint=https://thesislakehouse.file.core.windows.net/;TableEndpoint=https://thesislakehouse.table.core.windows.net/;SharedAccessSignature=sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupyx&se=2024-11-30T22:05:07Z&st=2024-11-18T16:05:07Z&spr=https&sig=vtkB%2BO%2BOEZmhAOuCzQUrebEL61f6KzNz5gohQwQAxms%3D"
+    connection_string = ""
     
     
     print("Connection to Azure...")
