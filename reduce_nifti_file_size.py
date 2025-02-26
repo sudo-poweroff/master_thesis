@@ -4,7 +4,6 @@ import os
 import csv
 
 def analyze_nifti(file_path):
-    # Load NIfTI file
     img = nib.load(file_path)
     data = img.get_fdata()
     header = img.header
@@ -54,23 +53,16 @@ def execute_reduction(file_name, dataset_path):
         writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
         writer.writeheader()
 
-        for root, dirs, files in os.walk(dataset_path):
+        for root, _, files in os.walk(dataset_path):
             for file in files:
                 path = os.path.join(root, file)
-                print(path)
                 # if the file has a .nii.gz or .nii extension then print file info
                 if path.endswith('.nii.gz') or path.endswith('.nii'):
                     initial_info = analyze_nifti(path)
-                    print("File info before processing:")
-                    for key, value in initial_info.items():
-                        print(f"{key}: {value}")
 
                     nifti_4d_to_3d(path, path, method="mean")
 
                     final_info = analyze_nifti(path)
-                    print("File info after processing:")
-                    for key, value in final_info.items():
-                        print(f"{key}: {value}")
 
                     # Write the info to the CSV file
                     writer.writerow({
@@ -88,6 +80,7 @@ def execute_reduction(file_name, dataset_path):
                     })
 
 
-dataset_path = input("Insert the dataset path: ")
-file_name = input("Insert the file name (.csv): ")
-execute_reduction(file_name, dataset_path)
+if __name__ == "__main__":
+    dataset_path = input("Insert the dataset path: ")
+    file_name = input("Insert the path (.csv) where save results: ")
+    execute_reduction(file_name=file_name, dataset_path=dataset_path)
