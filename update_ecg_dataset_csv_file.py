@@ -1,7 +1,6 @@
 from azure_connection import get_azure_connection
 import pandas as pd
 import os
-import shutil
 
 
 def join_report_fields(file_path):
@@ -43,4 +42,4 @@ if __name__ == "__main__":
     with open(file_path, "rb") as data:
         destination_blob_client.upload_blob(data, overwrite=True)
     print("The updated CSV file has been uploaded to the destination container.")
-    shutil.rmtree(file_path.split('/')[0])
+    os.remove(file_path)
