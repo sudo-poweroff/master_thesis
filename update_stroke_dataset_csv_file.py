@@ -1,7 +1,6 @@
 import pandas as pd
 from azure_connection import get_azure_connection
 import os
-import shutil
 
 def add_missing_rows(file_path):
     data = pd.read_csv(file_path, sep='\t', na_values='n/a')
