@@ -1,0 +1,5 @@
+Statistic,Count,Column Names
+All NA Rows (except participant_id),0,
+Rows with >= 50% NA,0,
+Columns with >= 50% NA,30,"session_order, allergies, leukocytes, erythrocytes, hemoglobin, hematocrit, MCV, MCH, MCHC, RDW-CV, platelets, PDW, MPV, P-LCR, neutrophils, lymphocytes, monocytes, eosinophils, basophils, neutrophils_%, lymphocytes_%, monocytes_%, eosinophils_%, basophils_%, total_cholesterol, cholesterol_HDL, non-HDL_cholesterol, LDL_cholesterol, triglycerides, HSV_r"
+Columns with all NA,30,"session_order, allergies, leukocytes, erythrocytes, hemoglobin, hematocrit, MCV, MCH, MCHC, RDW-CV, platelets, PDW, MPV, P-LCR, neutrophils, lymphocytes, monocytes, eosinophils, basophils, neutrophils_%, lymphocytes_%, monocytes_%, eosinophils_%, basophils_%, total_cholesterol, cholesterol_HDL, non-HDL_cholesterol, LDL_cholesterol, triglycerides, HSV_r"

@@ -1,0 +1,49 @@
+Column Name,Missing Values,Feature Columns,Imputation Method
+session_order,9,"['MINI-COPE_4', 'leukocytes', 'neutrophils']",Linear Regression
+education,8,"['neutrophils_%', 'lymphocytes_%']",Linear Regression
+learning_deficits,6,[],KNN Imputation
+allergies,6,[],KNN Imputation
+thyroid_diseases,1,[],KNN Imputation
+other_diseases,1,['drugs'],Linear Regression
+smoking_status,1,['AUDIT'],Linear Regression
+MINI-COPE_1,1,"['NEO_AGR', 'NEO_CON', 'MINI-COPE_2', 'MPV', 'P-LCR']",Linear Regression
+MINI-COPE_2,2,"['NEO_AGR', 'NEO_CON', 'MINI-COPE_1', 'MINI-COPE_13']",Linear Regression
+MINI-COPE_3,2,"['MINI-COPE_4', 'MINI-COPE_5']",Linear Regression
+MINI-COPE_4,2,"['session_order', 'MINI-COPE_3', 'lymphocytes_%']",Linear Regression
+MINI-COPE_5,2,"['NEO_AGR', 'MINI-COPE_3', 'CVLT_1', 'cholesterol_HDL']",Linear Regression
+MINI-COPE_6,2,['LDL_cholesterol'],Linear Regression
+MINI-COPE_8,2,['MINI-COPE_7'],Linear Regression
+MINI-COPE_9,3,[],KNN Imputation
+MINI-COPE_11,2,[],KNN Imputation
+MINI-COPE_13,2,"['BDI', 'SES', 'NEO_NEU', 'NEO_EXT', 'NEO_AGR', 'NEO_CON', 'MINI-COPE_2', 'MINI-COPE_10', 'MINI-COPE_14']",Linear Regression
+MINI-COPE_14,2,"['BDI', 'SES', 'NEO_NEU', 'NEO_EXT', 'NEO_CON', 'MINI-COPE_13']",Linear Regression
+CVLT_12,1,"['RPM', 'CVLT_1', 'CVLT_2', 'CVLT_3', 'CVLT_4', 'CVLT_5', 'CVLT_6', 'CVLT_7', 'CVLT_8', 'CVLT_11', 'CVLT_13']",Linear Regression
+CVLT_13,1,"['CVLT_1', 'CVLT_2', 'CVLT_3', 'CVLT_4', 'CVLT_5', 'CVLT_6', 'CVLT_7', 'CVLT_8', 'CVLT_11', 'CVLT_12']",Linear Regression
+leukocytes,3,"['session_order', 'BMI', 'diabetes', 'erythrocytes', 'hemoglobin', 'hematocrit', 'neutrophils', 'lymphocytes', 'monocytes', 'eosinophils', 'basophils', 'monocytes_%', 'cholesterol_HDL']",Linear Regression
+erythrocytes,3,"['sex', 'BMI', 'leukocytes', 'hemoglobin', 'hematocrit', 'MCV', 'monocytes', 'basophils', 'cholesterol_HDL']",Linear Regression
+hemoglobin,3,"['sex', 'leukocytes', 'erythrocytes', 'hematocrit', 'MCH', 'MCHC', 'RDW-CV', 'monocytes', 'cholesterol_HDL']",Linear Regression
+hematocrit,3,"['sex', 'leukocytes', 'erythrocytes', 'hemoglobin', 'MCHC', 'neutrophils', 'monocytes', 'cholesterol_HDL']",Linear Regression
+MCV,3,"['BMI', 'CVLT_1', 'CVLT_4', 'CVLT_6', 'CVLT_7', 'CVLT_8', 'erythrocytes', 'MCH', 'RDW-CV', 'cholesterol_HDL']",Linear Regression
+MCH,3,"['hemoglobin', 'MCV', 'MCHC', 'RDW-CV']",Linear Regression
+MCHC,3,"['age', 'sex', 'hemoglobin', 'hematocrit', 'MCH', 'RDW-CV', 'platelets']",Linear Regression
+RDW-CV,3,"['hemoglobin', 'MCV', 'MCH', 'MCHC']",Linear Regression
+platelets,3,"['age', 'MCHC', 'PDW', 'MPV', 'P-LCR']",Linear Regression
+PDW,3,"['platelets', 'MPV', 'P-LCR']",Linear Regression
+MPV,3,"['MINI-COPE_1', 'platelets', 'PDW', 'P-LCR']",Linear Regression
+P-LCR,3,"['MINI-COPE_1', 'platelets', 'PDW', 'MPV']",Linear Regression
+neutrophils,3,"['session_order', 'leukocytes', 'hematocrit', 'monocytes', 'neutrophils_%', 'lymphocytes_%', 'monocytes_%', 'cholesterol_HDL']",Linear Regression
+lymphocytes,3,"['BMI', 'diabetes', 'MINI-COPE_12', 'leukocytes', 'monocytes', 'basophils', 'neutrophils_%', 'lymphocytes_%']",Linear Regression
+monocytes,3,"['sex', 'leukocytes', 'erythrocytes', 'hemoglobin', 'hematocrit', 'neutrophils', 'lymphocytes', 'basophils', 'monocytes_%', 'cholesterol_HDL']",Linear Regression
+eosinophils,3,"['leukocytes', 'basophils', 'eosinophils_%']",Linear Regression
+basophils,3,"['leukocytes', 'erythrocytes', 'lymphocytes', 'monocytes', 'eosinophils', 'basophils_%']",Linear Regression
+neutrophils_%,3,"['education', 'MINI-COPE_4', 'neutrophils', 'lymphocytes', 'lymphocytes_%', 'monocytes_%']",Linear Regression
+lymphocytes_%,3,"['education', 'NEO_AGR', 'MINI-COPE_4', 'neutrophils', 'lymphocytes', 'neutrophils_%']",Linear Regression
+monocytes_%,3,"['sex', 'leukocytes', 'neutrophils', 'monocytes', 'neutrophils_%', 'basophils_%']",Linear Regression
+eosinophils_%,3,['eosinophils'],Linear Regression
+basophils_%,3,"['coffee_status', 'basophils', 'monocytes_%']",Linear Regression
+total_cholesterol,3,"['sex', 'hypertension', 'cholesterol_HDL', 'non-HDL_cholesterol', 'LDL_cholesterol']",Linear Regression
+cholesterol_HDL,3,"['sex', 'BMI', 'MINI-COPE_5', 'leukocytes', 'erythrocytes', 'hemoglobin', 'hematocrit', 'MCV', 'neutrophils', 'monocytes', 'total_cholesterol', 'triglycerides']",Linear Regression
+non-HDL_cholesterol,3,"['total_cholesterol', 'LDL_cholesterol', 'triglycerides']",Linear Regression
+LDL_cholesterol,3,"['hypertension', 'MINI-COPE_6', 'total_cholesterol', 'non-HDL_cholesterol']",Linear Regression
+triglycerides,3,"['cholesterol_HDL', 'non-HDL_cholesterol']",Linear Regression
+HSV_r,3,[],KNN Imputation

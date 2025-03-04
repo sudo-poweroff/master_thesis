@@ -1,0 +1,24 @@
+Column Name,Missing Values,Feature Columns,Imputation Method
+education,10,[],KNN Imputation
+learning_deficits,11,[],KNN Imputation
+ibuprofen_intake,1,[],KNN Imputation
+hypertension,1,"['BMI', 'drugs']",Linear Regression
+other_diseases,2,['drugs'],Linear Regression
+NEO_NEU,1,"['sex', 'BDI', 'SES', 'NEO_EXT', 'NEO_CON', 'MINI-COPE_1', 'MINI-COPE_2', 'MINI-COPE_13', 'MINI-COPE_14']",Linear Regression
+NEO_EXT,1,"['BDI', 'SES', 'NEO_NEU', 'NEO_CON', 'MINI-COPE_1', 'MINI-COPE_2', 'MINI-COPE_3', 'MINI-COPE_5', 'MINI-COPE_7', 'MINI-COPE_13', 'MINI-COPE_14']",Linear Regression
+NEO_OPE,1,['MINI-COPE_2'],Linear Regression
+NEO_AGR,1,[],KNN Imputation
+NEO_CON,1,"['SES', 'NEO_NEU', 'NEO_EXT', 'MINI-COPE_1', 'MINI-COPE_2', 'MINI-COPE_13', 'MINI-COPE_14']",Linear Regression
+MINI-COPE_1,1,"['BDI', 'SES', 'NEO_NEU', 'NEO_EXT', 'NEO_CON', 'MINI-COPE_2', 'MINI-COPE_3', 'MINI-COPE_4', 'MINI-COPE_13']",Linear Regression
+MINI-COPE_2,2,"['SES', 'NEO_NEU', 'NEO_EXT', 'NEO_OPE', 'NEO_CON', 'MINI-COPE_1', 'MINI-COPE_3', 'MINI-COPE_4', 'MINI-COPE_13', 'MINI-COPE_14']",Linear Regression
+MINI-COPE_3,3,"['SES', 'NEO_EXT', 'MINI-COPE_1', 'MINI-COPE_2', 'MINI-COPE_4', 'MINI-COPE_5']",Linear Regression
+MINI-COPE_4,2,"['MINI-COPE_1', 'MINI-COPE_2', 'MINI-COPE_3']",Linear Regression
+MINI-COPE_5,2,"['NEO_EXT', 'MINI-COPE_3']",Linear Regression
+MINI-COPE_6,2,[],KNN Imputation
+MINI-COPE_7,1,"['NEO_EXT', 'MINI-COPE_8']",Linear Regression
+MINI-COPE_8,2,['MINI-COPE_7'],Linear Regression
+MINI-COPE_9,2,[],KNN Imputation
+MINI-COPE_10,2,[],KNN Imputation
+MINI-COPE_11,3,[],KNN Imputation
+MINI-COPE_13,2,"['BDI', 'SES', 'NEO_NEU', 'NEO_EXT', 'NEO_CON', 'MINI-COPE_1', 'MINI-COPE_2', 'MINI-COPE_14']",Linear Regression
+MINI-COPE_14,2,"['BDI', 'SES', 'NEO_NEU', 'NEO_EXT', 'NEO_CON', 'MINI-COPE_2', 'MINI-COPE_13']",Linear Regression
