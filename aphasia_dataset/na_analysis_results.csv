@@ -1,0 +1,5 @@
+Statistic,Count,Column Names
+All NA Rows (except participant_id),0,
+Rows with >= 50% NA,0,
+Columns with >= 50% NA,0,
+Columns with all NA,0,

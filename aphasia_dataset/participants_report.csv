@@ -1,0 +1,3 @@
+Column Name,Missing Values,Feature Columns,Imputation Method
+race,2,[],KNN Imputation
+wab_type,32,['wab_aq'],Linear Regression
