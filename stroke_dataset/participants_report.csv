@@ -1,0 +1,5 @@
+Column Name,Missing Values,Feature Columns,Imputation Method
+race,65,[],KNN Imputation
+bmi,60,[],KNN Imputation
+gs_rankin_6isdeath,368,['nihss'],Linear Regression
+etiology,26,[],KNN Imputation

@@ -1,0 +1,5 @@
+Statistic,Count,Column Names
+All NA Rows (except participant_id),609,
+Rows with >= 50% NA,609,
+Columns with >= 50% NA,1,gs_rankin_6isdeath
+Columns with all NA,0,
