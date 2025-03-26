@@ -40,14 +40,14 @@ If you have new data and want to process it, execute the following steps:
 azcopy copy "path/to/dataset" "container-shared-access-token"
     --recursive=true --overwrite=false
 ```
-3. If you want to check the uppload integrity run `scripts\dataset_integrity.py`
+3. If you want to check the upload integrity run `scripts\dataset_integrity.py`
 4. Extract images from new files:
     1. If you have NIfTI files run `scripts\extract_images_from_nii_files.py` for image extraction
     2. If you have ECG files run `scripts\extract_images_from_ecg_files.py`
-    3. If you have a new type of imaging data develop code for image extraction
-5. If you need to generate text data use `scripts\text_data_generation.py`. If you are considering a new dataset please create a newer prompt for this dataset!
+    3. If you have a new type of imaging data please develop code for image extraction
+5. If you need to generate text data use `scripts\text_data_generation.py`. If you are considering a new dataset please create a new prompt for this dataset!
 6. Check the integrity of tabular data
-7. Standardize data runing `scripts\standardize_data.py`. If you are considering a new dataset please create a new mapping function.
+7. Standardize data running `scripts\standardize_data.py`. If you are considering a new dataset please create a new mapping function.
 8. Convert image to tensors using `scripts\image_to_tensor.py`
 9. Tokenize and embed text data using `scripts\text_tokenization_and_embedding.py`
 10. Process tabular data to handle missing values, embed categorical features and normalize continuous features using `scripts\tabular_data_processing.py`
